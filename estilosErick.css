@@ -1,0 +1,74 @@
+/* Fuente y base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* fondo gris claro de contraste */
+    color: #333333; /* gris oscuro para texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #007866; /* verde principal */
+    color: #ffffff; /* blanco para contraste */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Contenedor de tarjetas */
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Tarjeta individual */
+.miembro {
+    background-color: #ffffff; /* blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Imagen cuadrada */
+.miembro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* esquinas ligeramente redondeadas, puedes poner 0 si las quieres totalmente cuadradas */
+    margin-bottom: 15px;
+    border: 4px solid #007866; /* borde verde */
+    object-fit: cover; /* asegura que la imagen se vea bien sin deformarse */
+}
+
+/* Título dentro de tarjeta */
+.miembro h2 {
+    color: #007866;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.miembro p {
+    color: #333333;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
